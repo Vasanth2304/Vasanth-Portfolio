@@ -1,0 +1,21 @@
+<div>
+    <h2>Enter Player Names</h2>
+    <div *ngFor="let player of players; let i = index">
+      <input type="text" [(ngModel)]="players[i]" placeholder="Player {{i + 1}}">
+    </div>
+    <button (click)="generateTeams()">Generate Teams</button>
+  </div>
+
+ <div class="container">
+  <div class="row">
+    <div class="col">
+      Columns
+    </div>
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Columns
+    </div>
+  </div>
+</div>
