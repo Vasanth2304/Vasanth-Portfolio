@@ -1,3 +1,41 @@
 <app-header></app-header>
-<p>home works!</p>
-<app-footer></app-footer>
+
+<div class="center-wrapper d-flex align-items-center justify-content-center vh-100">
+  <section id="profile" class="d-flex flex-row align-items-center justify-content-center gap-5">
+    <div class="section__pic-container d-flex align-items-center justify-content-center">
+      <img
+        src="./assets/VasanthImage.jpg"
+        alt="Vasanth profile picture"
+        class="img-fluid rounded-circle profile-pic"
+      />
+    </div>
+
+    <div class="section__text text-center">
+      <p class="fw-bold mb-2">Hello, I'm</p>
+      <h1 class="title">Vasanth Ganesan</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+
+      <div class="btn-container d-flex justify-content-center gap-2 my-3">
+        <button class="btn btn-outline-dark" (click)="openResume()">Download CV</button>
+        <button class="btn btn-dark" routerLink="/contact">Contact Info</button>
+      </div>
+
+      <div class="socials-container d-flex justify-content-center gap-2">
+        <img
+          src="./assets/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          (click)="goToLink('https://linkedin.com')"
+        />
+        <img
+          src="./assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          (click)="goToLink('https://github.com')"
+        />
+      </div>
+    </div>
+  </section>
+</div>
+<app-about></app-about>
+<app-experience></app-experience>

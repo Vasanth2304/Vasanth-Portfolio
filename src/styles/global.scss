@@ -1,0 +1,13 @@
+// global.scss
+
+@import './variables';
+@import './mixins';
+@import './typography';
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-secondary;
+  margin: 0;
+  padding: 0;
+}
